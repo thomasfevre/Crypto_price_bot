@@ -49,5 +49,5 @@ then
     done
     IFS=$old_IFS 
     message="Daily checkup on LTC highest and lowest price of the day : [$high_price;$low_price]"
-    # ./telegram_bot "$message"
+    # ./telegram_bot.sh "$message"
 fi
