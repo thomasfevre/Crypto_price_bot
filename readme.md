@@ -1,9 +1,9 @@
 # Token price - BOT Telegram
-This project allows you to host a telegram bot detecting new coins listed on different chains: Ethereum, Solana, Cardano, Polygon, BSC...
+This project allows you to get the price of famous crypto currencies on telegram if the price goes above a certain value
+You can choose the crypto and choose the value !
 
-You can host it directly on your machine or on a remote server to receive notifications at any time through the Telegram messaging application.
-
-This bot uses the Coingecko listings that I recommend you to check: https://www.coingecko.com/en/new-cryptocurrencies
+There is also a daily recap at 23:59 each day
+All price values are logged into a log file called script_ltc_log
 
 # Bot Configuration 
 Clone this repo :
@@ -16,9 +16,9 @@ Enable script execution :
 chmod u+x init.sh
 ```
 
-Then run init.sh : 
+Then run script.sh : 
 ```
-./init.sh
+./script.sh
 ```
 
 SetUp a bot on Telegram by using @BotFather
@@ -26,7 +26,7 @@ Create a new public group and add the bot.
 Request the API :[https://api.telegram.org/bot<YourBOTToken>/getUpdates](https://api.telegram.org/bot<YourBOTToken>/getUpdates)
 And get your chat_id.
   
-In init.sh edit $TOKEN and $CHATID with YOUR OWN values.
+In telegram_bot.sh edit $TOKEN and $CHATID with YOUR OWN values.
 
 # Linux / Cron Job configuration
 
@@ -43,5 +43,4 @@ Close the terminal and you should get a sucess message.
 ```
 > crontab: installing new crontab
 ```
-You did it ! 
-Check your telegram channel and enjoy the latest Listed Coin notifications !
+Done !
