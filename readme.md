@@ -13,7 +13,7 @@ git clone <repo_url>
 
 Enable script execution :
 ```
-chmod u+x init.sh
+chmod u+x script.sh
 ```
 
 Then run script.sh : 
@@ -37,7 +37,7 @@ $ crontab –e
 ```
 In the crontab terminal edit and write :
 ```
-30 * * * * <PATH_TO_init.sh>
+* * * * * <PATH_TO_script.sh>
 ```
 Close the terminal and you should get a sucess message.
 ```
