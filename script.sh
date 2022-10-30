@@ -22,6 +22,7 @@ else
 	echo $message >> script_ltc_log
 fi
 
+# If LTC price goes above 100 $, send a telegram message
 if [ $(echo "$ltc_usdt >= 100.00" | bc -l) -eq 1 ]
 then
     ./telegram_bot "$message"
