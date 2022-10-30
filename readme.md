@@ -47,12 +47,11 @@ Done !
 
 # Example
 
-Here is an example for Litecoin (LTC), with a telegram message trigger when the price is above 50 $ :
+Here is an example for Litecoin (LTC), with a telegram message trigger when the price is above 50 $ :  
+Open the file called "log_exemple.txt", to show what the log file looks like.  
 (Please ignore the time on this example)
 
 ![Exemple of a message when the price is above a value](exemple\crypto_price_bot_image1)
 
 ![Exemple of a daily recap](exemple\crypto_price_bot_image2)
 
-(I didn)
-Open the file called "log_exemple.txt", to show what the log file looks like
