@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GROUP_ID=-1001768659970
-BOT_TOKEN=5516237955:AAGjuZHOdiHf5696KtQfE3s6gCFM0oMGMfo
+GROUP_ID=
+BOT_TOKEN=
 
 
  # this 3 checks (if) are not necessary but should be convenient
