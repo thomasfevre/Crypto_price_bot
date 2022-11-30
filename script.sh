@@ -25,7 +25,7 @@ fi
 # If LTC price goes above 100 $, send a telegram message
 if [ $(echo "$ltc_usdt >= 100.00" | bc -l) -eq 1 ]
 then
-    ./telegram_bot "$message"
+    ./telegram_bot.sh "$message"
 fi
 
 # If it is 23:59, send a recap message on telegram
@@ -57,6 +57,6 @@ then
     IFS=$old_IFS 
 
     message="Daily checkup on LTC highest and lowest price of the day : [$high_price;$low_price]"
-    ./telegram_bot "$message"
+    ./telegram_bot.sh "$message"
 	
 fi
